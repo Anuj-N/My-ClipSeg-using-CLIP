@@ -10,11 +10,11 @@ I have worked on this project in the following manner:
   - Downloaded the dataset
   - Preprocess the dataset using pandas and generate csv files
 
-2) Then in myClip.ipynb, I did the following steps:
+2) Then in myClip.ipynb, I performed the following steps:
   - Generated masks (ground truth) for the dataset images using OpenCV methods
   - Made Dataloader class and loaded the dataset
   - Made custom encoder (non-trainable) using encoder_model.py which uses CLIP's encoder functions 
-  - Made custom decoder (trainable) using decoder_model.py
-  - Implemented the Training Loop and ran it for 10 epochs separately for 2 different loss functions : BCE Loss and DICE Loss
-  - Calculated the accuracy in 3 ways : pixel-by-pixel, iou (intersection over union) and dice score for both
+  - Made two custom decoders (trainable) using decoder_model.py
+  - Implemented the Training Loop and ran it for 10 epochs separately for 2 different loss functions (BCE Loss and DICE Loss) on the two decoders
+  - Calculated the accuracy in 3 ways : pixel-by-pixel, iou (intersection over union) and dice score after both training loops
   - Tabulated the results in accuracies.pdf
